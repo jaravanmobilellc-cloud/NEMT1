@@ -1,17 +1,67 @@
 ---
-
+// Clean Canvas - No complex framework components needed
 ---
-
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>San Diego Medical Transport | Coming Soon</title>
+	<style>
+		body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f8fafc; }
+		main { max-width: 800px; margin: 0 auto; padding: 3rem 1.5rem; }
+		
+		/* WIP BANNER */
+		.wip-banner { display: flex; align-items: center; gap: 1rem; background-color: #fff9db; border: 1px solid #ffe066; border-radius: 8px; padding: 1rem; margin-bottom: 2.5rem; }
+		.wip-badge { background-color: #f59f00; color: white; font-weight: bold; font-size: 0.75rem; padding: 0.25rem 0.5rem; border-radius: 4px; text-transform: uppercase; white-space: nowrap; }
+		.wip-banner p { margin: 0; color: #856404; font-weight: 500; }
+
+		/* HERO ZONE */
+		.hero { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 2.5rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); margin-bottom: 2rem; }
+		h1 { color: #0044cc; margin-top: 0; font-size: 2.25rem; line-height: 1.2; }
+		.lead { font-size: 1.2rem; color: #4a5568; margin-bottom: 1.5rem; }
+		
+		/* BUTTONS */
+		.cta-group { display: flex; gap: 1rem; flex-wrap: wrap; }
+		.btn { display: inline-block; padding: 0.75rem 1.5rem; font-weight: bold; text-decoration: none; border-radius: 6px; }
+		.btn-primary { background-color: #0066cc; color: white; }
+		.btn-secondary { border: 2px solid #0066cc; color: #0066cc; }
+
+		/* VEHICLE CARD */
+		.vehicle-card { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+		h2 { color: #1a202c; margin-top: 0; }
+		ul { padding-left: 1.25rem; margin-bottom: 0; }
+		li { margin-bottom: 0.5rem; color: #4a5568; }
+	</style>
+</head>
+<body>
+	<main>
+		<!-- WORK IN PROGRESS -->
+		<div class="wip-banner">
+			<span class="wip-badge">Work in Progress</span>
+			<p>Our website is under construction. Launching premier Non-Emergency Medical Transportation (NEMT) across San Diego County soon!</p>
+		</div>
+
+		<!-- HERO BUSINESS ACCORD -->
+		<section class="hero">
+			<h1>San Diego Wheelchair & Ambulatory Medical Transport</h1>
+			<p class="lead">Providing safe, reliable, door-through-door non-emergency medical transportation services for patients, families, and healthcare facilities.</p>
+			<div class="cta-group">
+				<a href="tel:6193177789" class="btn btn-primary">Call to Inquire: (619) 317-7789</a>
+				<a href="mailto:jaravanmobilellc@gmail.com" class="btn btn-secondary">Email Our Team</a>
+			</div>
+		</section>
+
+		<!-- PRESTIGE FLEET SECTION -->
+		<section class="vehicle-card">
+			<h2>Our Premium Fleet Asset</h2>
+			<p>We proudly operate a <strong>2026 Toyota Sienna VMI Longcut</strong> hybrid minivan. </p>
+			<ul>
+				<li><strong>ADA-Compliant Rear Entry:</strong> Low-angle ramp system ensures seamless, safe loading of wheelchairs, power scooters, and wide bariatric mobility devices.</li>
+				<li><strong>Fully Certified Drivers:</strong> Every ride is operated by a driver trained in CPR, First Aid, and passenger assistance techniques.</li>
+				<li><strong>Full Regional Coverage:</strong> Reliable transportation throughout San Diego County.</li>
+			</ul>
+		</section>
+	</main>
+</body>
 </html>
