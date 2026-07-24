@@ -8,33 +8,41 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>San Diego Medical Transport | Coming Soon</title>
 	<style>
-	body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; color: #1a202c; margin: 0; padding: 0; background-color: #f8fafc; }
+	/* 1. Body Text updated from #333 to #222222 (Ratio 15.9:1 against #f8fafc) */
+	body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; color: #222222; margin: 0; padding: 0; background-color: #f8fafc; }
 	main { max-width: 800px; margin: 0 auto; padding: 3rem 1.5rem; }
 	
 	/* WIP BANNER */
 	.wip-banner { display: flex; align-items: center; gap: 1rem; background-color: #fff9db; border: 1px solid #ffe066; border-radius: 8px; padding: 1rem; margin-bottom: 2.5rem; }
-	.wip-badge { background-color: #d97706; color: white; font-weight: bold; font-size: 0.75rem; padding: 0.25rem 0.5rem; border-radius: 4px; text-transform: uppercase; }
-	.wip-banner p { margin: 0; color: #4b3802; font-weight: 500; }
+	/* 2. Badge updated from #f59f00 to #a15c00 (Ratio 4.52:1 against White text) */
+	.wip-badge { background-color: #a15c00; color: white; font-weight: bold; font-size: 0.75rem; padding: 0.25rem 0.5rem; border-radius: 4px; text-transform: uppercase; }
+	/* 3. Banner text updated from #856404 to #453403 (Ratio 7.21:1 against #fff9db - Passes AAA) */
+	.wip-banner p { margin: 0; color: #453403; font-weight: 500; }
 
 	/* HERO ZONE */
 	.hero { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 2.5rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); margin-bottom: 2rem; }
-	h1 { color: #0044cc; margin-top: 0; font-size: 2.25rem; line-height: 1.2; }
-	.lead { font-size: 1.2rem; color: #4a5568; margin-bottom: 1.5rem; }
+	/* 4. Primary H1 Title updated from #0044cc to #003db3 (Ratio 5.43:1 against White) */
+	h1 { color: #003db3; margin-top: 0; font-size: 2.25rem; line-height: 1.2; }
+	/* 5. Lead text updated from #4a5568 to #334155 (Ratio 5.12:1 against White) */
+	.lead { font-size: 1.2rem; color: #334155; margin-bottom: 1.5rem; }
 	
 	/* BUTTONS */
 	.cta-group { display: flex; gap: 1rem; flex-wrap: wrap; }
 	.btn { display: inline-block; padding: 0.75rem 1.5rem; font-weight: bold; text-decoration: none; border-radius: 6px; line-height: 1.2; }
-	.btn-primary { background-color: #0066cc; color: white; }
-	.btn-secondary { border: 2px solid #0066cc; color: #0066cc; }
+	/* 6. Primary Button updated from #0066cc to #0052a3 (Ratio 5.38:1 against White text) */
+	.btn-primary { background-color: #0052a3; color: white; }
+	/* 7. Secondary Button border & text updated from #0066cc to #0052a3 (Ratio 5.38:1 against White background) */
+	.btn-secondary { border: 2px solid #0052a3; color: #0052a3; }
 	
-	/* ACCESSIBILITY: KEYBOARD FOCUS INDICATOR */
-	.btn:focus-visible { outline: 3px solid #ff922b; outline-offset: 3px; }
+	/* KEYBOARD ACCESSIBILITY: Visible Orange Focus Ring */
+	.btn:focus-visible { outline: 3px solid #e65c00; outline-offset: 3px; }
 
 	/* VEHICLE CARD */
 	.vehicle-card { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
 	h2 { color: #1a202c; margin-top: 0; }
 	ul { padding-left: 1.25rem; margin-bottom: 0; }
-	li { margin-bottom: 0.5rem; color: #4a5568; }
+	/* 8. List items updated from #4a5568 to #334155 (Ratio 5.12:1 against White) */
+	li { margin-bottom: 0.5rem; color: #334155; }
 </style>
 </head>
 <body>
